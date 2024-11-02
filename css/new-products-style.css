@@ -1,0 +1,120 @@
+/* تنظیمات کلی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: center;
+}
+
+/* هدر سایت */
+header {
+    background-color: #ff8a80; /* رنگ نارنجی روشن */
+    padding: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffc107; /* مرز زیر هدر */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover, .active {
+    color: #ffc107; /* تغییر رنگ در هاور */
+}
+
+/* بخش محصولات */
+.products {
+    padding: 40px 20px;
+}
+
+.products h2 {
+    color: #343a40;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.product-card .description {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #ff8a80; /* رنگ دکمه مشابه هدر */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #ffc107; /* تغییر رنگ دکمه در هاور */
+}
+
+/* فوتر سایت */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 40px;
+}

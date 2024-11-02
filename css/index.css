@@ -1,0 +1,138 @@
+/* تنظیمات کلی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdf3e3;
+    color: #333;
+    text-align: center;
+}
+
+/* هدر سایت */
+header {
+    background-color: #ff8a80; /* رنگ ملایم‌تر برای هدر */
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px; /* حاشیه گرد */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* سایه برای جذابیت */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff4e6; /* رنگ ملایم‌تر برای عنوان */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* سایه متن */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffebee; /* رنگ جدید برای لینک‌ها */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff4e6; /* تغییر رنگ در حالت هاور */
+    color: #ff6f61;
+    border-radius: 5px;
+}
+
+/* اسلایدر */
+.slider {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 10px; /* حاشیه گرد برای زیبایی */
+}
+
+.slider h2 {
+    font-size: 1.5rem;
+}
+
+/* دسته‌بندی محصولات */
+.categories {
+    margin: 40px 0;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.category {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* محصولات محبوب */
+.popular-products {
+    background-color: #ffe5e5;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.popular-products h2 {
+    font-size: 1.8rem;
+    color: #ff6f61;
+}
+
+.product {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #ff8a80; /* تغییر رنگ در حالت هاور */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin-top: 40px;
+}
