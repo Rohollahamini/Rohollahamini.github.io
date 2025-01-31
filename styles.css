@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* جلوگیری از اسکرول */
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('legendary-nyx-starstruck-triple-threat-draw-1280x720.webp'); /* تصویر پس‌زمینه */
+    background-size: cover; /* پوشش کامل پس‌زمینه */
+    z-index: -1; /* قرار دادن پس‌زمینه در پشت سایر عناصر */
+}
+
+.rank-box {
+    position: fixed; /* ثابت کردن مربع پروفایل */
+    top: 50%; /* مرکز عمودی */
+    left: 50%; /* مرکز افقی */
+    transform: translate(-50%, -50%); /* جابجایی به مرکز */
+    background-color: rgba(255, 255, 255, 0.8); /* رنگ پس‌زمینه مربع با شفافیت */
+    border-radius: 15px; /* گوشه‌های گرد */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* سایه */
+    text-align: center;
+    z-index: 1; /* قرار دادن مربع در بالای سایر عناصر */
+}
+
+.group-image {
+    width: 100px; /* عرض تصویر */
+    height: 100px; /* ارتفاع تصویر */
+    border-radius: 50%; /* دایره‌ای کردن تصویر */
+    margin-bottom: 15px; /* فاصله پایین تصویر */
+}
+
+.group-name {
+    margin: 10px 0; /* فاصله بالا و پایین عنوان */
+}
+
+.join-button {
+    display: inline-block;
+    background-color: #007bff; /* رنگ دکمه */
+    color: white; /* رنگ متن دکمه */
+    padding: 10px 20px; /* فاصله داخلی دکمه */
+    border-radius: 5px; /* گوشه‌های گرد دکمه */
+    text-decoration: none; /* حذف خط زیر دکمه */
+    transition: background-color 0.3s; /* انیمیشن تغییر رنگ */
+}
+
+.join-button:hover {
+    background-color: #0056b3; /* رنگ دکمه در حالت هاور */
+}
+
+.container {
+    position: fixed; /* ثابت کردن موقعیت تصاویر */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-box {
+    position: absolute; /* موقعیت مطلق برای تصاویر */
+    width: 200px; /* عرض تصویر */
+    height: 200px; /* ارتفاع تصویر */
+    overflow: hidden; /* جلوگیری از نمایش تصویر خارج از باکس */
+    border-radius: 15px; /* گوشه‌های گرد */
+    transition: transform 0 .3s; /* انیمیشن بزرگ شدن */
+}
+
+.image-box:hover {
+    transform: scale(1.1); /* بزرگ شدن تصویر در حالت هاور */
+}
+
+.top-right {
+    top: 20px;
+    right: 20px; /* موقعیت تصویر در گوشه بالا سمت راست */
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px; /* موقعیت تصویر در گوشه پایین سمت راست */
+}
+
+.top-left {
+    top: 20px;
+    left: 20px; /* موقعیت تصویر در گوشه بالا سمت چپ */
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px; /* موقعیت تصویر در گوشه پایین سمت چپ */
+}
+
+.hover-image {
+    width: 100%; /* عرض تصویر به اندازه باکس */
+    height: 100%; /* ارتفاع تصویر به اندازه باکس */
+    object-fit: cover; /* حفظ نسبت تصویر */
+}
